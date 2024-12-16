@@ -1,14 +1,15 @@
 version: "3.8"
 services:
-  # app:
-  #   build: .
-  #   ports:
-  #     - "5000:5000"
-  #   env_file:
-  #     - .env
-  #   depends_on:
-  #     - db
-  #     - redis
+  # The server is currently not configured to run in docker network with mySQL and Redis.
+  app:
+    build: .
+    ports:
+      - "5001:5001"
+    env_file:
+      - .env
+    depends_on:
+      - db
+      - redis
   db:
     image: mysql:8
     environment:

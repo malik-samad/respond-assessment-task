@@ -1,6 +1,5 @@
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import { Models } from "../../database/models/index.js";
-import { escape } from "sequelize/lib/sql-string";
 
 export class AuthenticationRepository {
   constructor() {

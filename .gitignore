@@ -131,3 +131,4 @@ dist
 
 src/uploads
 *.local.*
+build

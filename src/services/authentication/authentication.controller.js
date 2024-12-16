@@ -7,7 +7,6 @@ export class AuthenticationController {
       console.log("AuthenticationController instance already exists");
       return AuthenticationController.instance;
     }
-    console.log("AuthenticationController instance created");
     this.Service = new AuthenticationService();
     AuthenticationController.instance = this;
   }

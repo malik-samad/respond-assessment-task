@@ -1,8 +1,8 @@
 import express from "express";
-import routes from "./src/api/index.js";
-import { SequelizeConnection } from "./src/database/connection.js";
-import RedisClient from "./src/services/redisClient/redisClient.service.js";
-import { isDev } from "./src/configs.js";
+import routes from "./api/index.js";
+import { SequelizeConnection } from "./database/connection.js";
+import RedisClient from "./services/redisClient/redisClient.service.js";
+import { isDev } from "./configs.js";
 import expressFileUpload from "express-fileupload";
 
 const app = express();
