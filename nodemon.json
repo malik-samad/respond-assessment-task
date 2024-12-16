@@ -1,0 +1,5 @@
+{
+  "watch": ["src/**/*.js", "index.js"],
+  "ext": "js,json",
+  "exec": "cross-env NODE_ENV=development babel-node index.js"
+}
